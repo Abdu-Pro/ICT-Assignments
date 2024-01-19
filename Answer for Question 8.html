@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abduu-8</title>
+  <style>
+    body{
+      background-color: skyblue;
+      margin: 15px;
+      padding: 15px;
+    }
+    h1{
+      font-family: algerian;
+      font-size: 40px;
+    }
+    p{
+      font:40px bold;
+      font-family: sans-serif;
+    }
+    form{
+      background-color: none;
+      border: 10px solid;
+      border-radius: 25px 0px;
+      padding:20px;
+    }
+    input{
+      background-color: silver;
+      border: 3px solid blue;
+      border-radius: 0px 8px;
+      padding:4px;
+    }
+    label{
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1> Q-8. Enter your mark from each subject to get your average.
+  </h1>
+  <p>Answer:</p>
+ <form action="">
+    <label for="">Afan oromo</label> <br>
+    <input type="number" id="ao" required> <br>
+    <label for="">Amharic</label> <br>
+    <input type="number" id="aa" required> <br>
+    <label for="">English</label> <br>
+    <input type="number" id="eng" required> <br>
+    <label for="">Mathematics</label> <br>
+    <input type="number" id="math" required> <br>
+    <label for="">Physics</label> <br>
+    <input type="number" id="phy" required> <br>
+    <label for="">Biology</label> <br>
+      <input type="number" id="bio" required> <br>
+      <label for="">Chemistry</label> <br>
+      <input type="number" id="chem" required> <br>
+      <label for="">Area study</label> <br>
+      <input type="number" id="as" required> <br>
+      <label for="">History</label> <br>
+      <input type="number" id="his" required> <br>
+      <label for="">Civics</label> <br>
+      <input type="number" id="civ" required> <br>
+      <label for="">Geography</label> <br>
+      <input type="number" id="geo" required> <br>
+      <label for="">Chinese/French/Arabic</label> <br>
+    <input type="number" id="fre" required> <br>
+    <label for="">ICT</label> <br>
+    <input type="number" id="ict" required> <br>
+    <label for="">HPE</label> <br>
+    <input type="number" id="hpe" required> <br>
+      <input type="submit" id="o">
+  </form>
+<script>
+  document.getElementById("o").addEventListener("click",nego)
+  function nego() {
+let ao= document.getElementById("ao").value
+let aa= document.getElementById("aa").value
+let eng= document.getElementById("eng").value
+let math= document.getElementById("math").value
+let phy= document.getElementById("phy").value
+let bio= document.getElementById("bio").value
+let chem= document.getElementById("chem").value
+let as= document.getElementById("as").value
+let his= document.getElementById("his").value
+let civ= document.getElementById("civ").value
+let fre= document.getElementById("fre").value
+let ict= document.getElementById("ict").value
+let hpe= document.getElementById("hpe").value
+let geo= document.getElementById("geo").value
+  
+  
+   
+   let totalMarks = parseInt(ao) + parseInt(aa) + parseInt(eng) +parseInt(math)  + parseInt(phy) +parseInt(bio) +parseInt(chem) 
+   +parseInt(as) + parseInt(his) + parseInt(civ)+ parseInt(fre) + parseInt(ict)+ parseInt(hpe) + parseInt(geo);
+   let averageMarks = totalMarks/14;
+   document.write("Total marks obtained: " + totalMarks + "<br>"); 
+   document.write("Average marks obtained: " + averageMarks.toFixed(2));
+  }
+</script>
+</body>
+
+</html

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abduu-2</title>
+  <style>
+    body{
+      background-color: skyblue;
+      margin: 15px;
+      padding: 15px;
+    }
+    h1{
+      font-family: algerian;
+      font-size: 40px;
+    }
+    p{
+      font:40px bold;
+      font-family: sans-serif;
+    }
+    form{
+      background-color: none;
+      border: 10px solid;
+      border-radius: 25px 0px;
+      padding:20px;
+    }
+    input{
+      background-color: silver;
+      border: 3px solid blue;
+      border-radius: 0px 8px;
+      padding:4px;
+    }
+    label{
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+    <h1>Q-2. Enter two Integers to check which one is the larger</h1>
+    <p>Answer:</p>
+    <label>Number 1</label> <br>
+
+    <input type="number" id="4" required> <br>
+    <label>Number 2</label> <br>
+    <input type="number" id="5" required> <br>
+    <input type="submit" id="o" >
+ 
+<script>
+
+
+
+document.getElementById("o").addEventListener("click",efrem)
+function efrem() {
+let a= document.getElementById("4").value
+let b= document.getElementById("5").value
+  if (a > b) {
+    document.write("The larger number is " + a );
+  } else if (a < b) {
+    document.write("The larger number is " + b);
+  } else if (a === b) {
+    document.write("Both numbers are equal!");
+ } else {
+     document.write("Please add an integer!");
+  }
+}
+
+
+</script>
+</body>
+
+</html>

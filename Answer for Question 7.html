@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Abduu-7</title>
+  <style>
+    body{
+      background-color: skyblue;
+      margin: 15px;
+      padding: 15px;
+    }
+    h1{
+      font-family: algerian;
+      font-size: 40px;
+    }
+    p{
+      font:40px bold;
+      font-family: sans-serif;
+    }
+    form{
+      background-color: none;
+      border: 10px solid;
+      border-radius: 25px 0px;
+      padding:20px;
+    }
+    input{
+      background-color: silver;
+      border: 3px solid blue;
+      border-radius: 0px 8px;
+      padding:4px;
+    }
+    label{
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+ <h1>Q-7. To change from celsius to farhenheit</h1>
+ <p>Answer:</p>
+ <form action="">
+    <label for="">Temprature in celsius</label> <br>
+    <input type="number" id="temp" required> <br>
+    <input type="submit" id="o">
+    
+  </form>
+<h1>To change from farhenheit to celsius</h1>
+<form action="">
+  <label for=""> Temprature in farhenheit</label> <br>
+  <input type="number" id="tempo"> <br>
+  <input type="submit" id="p">
+</form>
+  <script>
+    document.getElementById("o").addEventListener("click",efrem)
+    document.getElementById("p").addEventListener("click",eyu)
+    
+function efrem() {
+    let temp = document.getElementById("temp").value
+   let Fahrenheit= (9 * temp + 160)/5
+   document.write(temp + "  celsius is  " + Fahrenheit + "  fahrenheit")
+  }
+  function eyu() {
+    let tempo = document.getElementById("tempo").value
+   let celsius= (5 * tempo - 160)/9
+   document.write(tempo + "  farhenheit is  " + celsius + "  celsius")
+  }
+  
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abduu-4</title>
+  <style>
+    body{
+      background-color: skyblue;
+      margin: 15px;
+      padding: 15px;
+    }
+    h1{
+      font-family: algerian;
+      font-size: 40px;
+    }
+    p{
+      font:40px bold;
+      font-family: sans-serif;
+    }
+    form{
+      background-color: none;
+      border: 10px solid;
+      border-radius: 25px 0px;
+      padding:20px;
+    }
+    input{
+      background-color: silver;
+      border: 3px solid blue;
+      border-radius: 0px 8px;
+      padding:4px;
+    }
+    label{
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+<h1>Q-4. Enter five integers to check wich one is the largest.</h1>
+<p>Answer:</p>
+  <form action="">
+    <label for="1">number 1</label> <br>
+    <input type="number" id="1" required> <br>
+    <label for="2">number 2</label> <br>
+    <input type="number" id="2" required> <br>
+    <label for="3">number 3</label> <br>
+    <input type="number" id="3" required> <br>
+    <label for="4">number 4</label> <br>
+    <input type="number" id="4" required> <br>
+    <label for="5">number 5</label> <br>
+    <input type="number" id="5" required> <br>
+    <input type="submit" id="o"> 
+  </form>
+<script>
+  document.getElementById("o").addEventListener("click",eyu)
+ function eyu(){
+  let a= document.getElementById("1").value
+let b= document.getElementById("2").value
+let c= document.getElementById("3").value
+let d= document.getElementById("4").value
+let e= document.getElementById("5").value
+  if (a > b && a > c && a > d && a > e)
+  {
+    document.write("The largest number is " + a);
+  
+  }
+  else if (b > a && b > c && b > d && b > e)
+  {
+    document.write("The largest number is " + b);
+  
+  }
+  else if (c > b && c > a && c > d && c > e)
+  {
+    document.write("The largest number is " + c);
+  
+  }
+ else if (d > b && d > c && d > a && d > e)
+  {
+    document.write("The largest number is " + d);
+  
+  }
+  else if (e > b && e > c && e > d && e > a)
+  {
+    document.write("The largest number is " + e);
+  
+  }
+}
+</script>
+</body>
+
+</html>
